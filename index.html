@@ -20,7 +20,6 @@
         margin-right:10px;
     }
     #menu-area {
-        width:200px;
         height:100vh;
         background:#ccc;
         overflow-x:hidden;
@@ -40,6 +39,14 @@
     #menu-area li:hover {
         background:#DDD;
     }
+
+    .closedMenu{
+        width: 0px;
+    }
+
+    .openedMenu{
+        width: 200px;
+    }
     </style>
     </head>
 <body>
@@ -48,7 +55,7 @@
     <div id="menu-opener">
         <img src="menu.png" width="36">
     </div>
-    <div id="menu-area">
+    <div id="menu-area" class="openedMenu">
         <ul>
             <li>Home</li>
             <li>Sobre</li>
@@ -56,7 +63,7 @@
         </ul>
     </div>
 </aside>
-<script>
+<script src="assets/js/script.js">
 
 </script>
 </body>
